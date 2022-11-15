@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    public float maxSpeed = 0.5f;
+    public float maxSpeed = 0.9f;
     float rotation = 0.0f;
     float camRotation = 0.0f;
     GameObject cam;
+    Rigidbody myRigidbody;
 
     float rotationSpeed = 2.0f;
     float camRotationSpeed = 1.5f;
@@ -15,10 +16,13 @@ public class CharacterController : MonoBehaviour
     void Start()
     {
         cam = GameObject.Find("Main Camera");
+        myRigidbody = GetComponent<Rigidbody>();
     }
     void Update()
     {
-        transform.position = transform.position + (transform.forward * Input.GetAxis("Vertical")) + (transform.right * Input.GetAxis("Horizontal"));
+        //transform.position = transform.position + (transform.forward * Input.GetAxis("Vertical")) + (transform.right * Input.GetAxis("Horizontal"));
+        Vector3 newVelocity = transform.forward * Input.GetAxis("Vertical") * maxSpeed;
+        myRigidbody.velocity = new Vector3(newVelocity.x, myRigidbody.velocity.y, newVelocity.z);
 
         rotation = rotation + Input.GetAxis("Mouse X") * rotationSpeed;
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
