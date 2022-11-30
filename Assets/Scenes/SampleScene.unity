@@ -6969,7 +6969,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936688799}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 168.9, y: 29.3, z: -15.9}
+  m_LocalPosition: {x: 4.8, y: 29.3, z: -15.9}
   m_LocalScale: {x: 173.72801, y: 1.4322332, z: 189.7193}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14467,6 +14467,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e27fce2b612344cab550ab0d4a0730, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOpen: 0
+  Door3Dmodel: {fileID: 0}
+  startingPoint: {fileID: 0}
+  endingPoint: {fileID: 0}
 --- !u!4 &1989289621
 Transform:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class MovingDoor : MonoBehaviour
 
     private void Update()
     {
-        if (isOpen == private void OnRenderImage(RenderTexture src, RenderTexture dest) {
+        if (isOpen == true)
         {
             Door3Dmodel.position = Vector3.MoveTowards(Door3Dmodel.position, endingPoint.position, Time.deltaTime);
         }
