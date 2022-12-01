@@ -6146,13 +6146,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499729200}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.76, y: 15.52, z: -2.82}
+  m_LocalRotation: {x: -0, y: 0.35831058, z: -0, w: 0.93360245}
+  m_LocalPosition: {x: 12.6, y: 2.5500002, z: -2.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1989289621}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 41.993, z: 0}
 --- !u!1 &523639134 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6631146190901206015, guid: 95944ae49834cec4190e7369f475a685, type: 3}
@@ -6969,7 +6969,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936688799}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.8, y: 29.3, z: -15.9}
+  m_LocalPosition: {x: -2.3, y: 29.3, z: -15.9}
   m_LocalScale: {x: 173.72801, y: 1.4322332, z: 189.7193}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7109,6 +7109,8 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194230}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7181,6 +7183,83 @@ Transform:
   m_Father: {fileID: 31494453}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: a9cb58325e0de894abf1aa3dffbb971d, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 963194228}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &969148638
 GameObject:
   m_ObjectHideFlags: 0
@@ -7254,15 +7333,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4695428ef5ed941488c5848c06835985, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -68.918594
+      value: 11.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4695428ef5ed941488c5848c06835985, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.137464
+      value: 2.55
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4695428ef5ed941488c5848c06835985, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -78.37822
+      value: -4.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4695428ef5ed941488c5848c06835985, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7300,10 +7379,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door3Dmodel
       objectReference: {fileID: 0}
+    - target: {fileID: 1219984742246070589, guid: 4695428ef5ed941488c5848c06835985, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0124
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219984742246070589, guid: 4695428ef5ed941488c5848c06835985, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219984742246070589, guid: 4695428ef5ed941488c5848c06835985, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0023
+      objectReference: {fileID: 0}
     - target: {fileID: 2221103866354829164, guid: 4695428ef5ed941488c5848c06835985, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1d2c5ee1dff6cfe44bb393af1fe81e78, type: 2}
+    - target: {fileID: 8011472401910998073, guid: 4695428ef5ed941488c5848c06835985, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8011472401910998073, guid: 4695428ef5ed941488c5848c06835985, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8011472401910998073, guid: 4695428ef5ed941488c5848c06835985, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4695428ef5ed941488c5848c06835985, type: 3}
 --- !u!4 &987519711 stripped
@@ -7328,7 +7431,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.030564846, y: 0.055507097, z: 0.0046564736}
-  m_Center: {x: 0.19359137, y: 0.027396554, z: 0.19544543}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1010103942 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2509730119719524873, guid: 95944ae49834cec4190e7369f475a685, type: 3}
@@ -7894,7 +7997,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356576871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.6, y: 1.54, z: -2.91}
+  m_LocalPosition: {x: 11.37, y: 2.55, z: -4.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1989289621}
@@ -8193,6 +8296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1449571991}
   - component: {fileID: 1449571992}
+  - component: {fileID: 1449571993}
   m_Layer: 0
   m_Name: 'Automatic Door Sensor '
   m_TagString: Untagged
@@ -8208,7 +8312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449571990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.953409, y: 3.2230682, z: -3.2182198}
+  m_LocalPosition: {x: 11.46, y: 1.94, z: -3.2182198}
   m_LocalScale: {x: 12.297069, y: 20.257158, z: 9.105387}
   m_Children: []
   m_Father: {fileID: 1989289621}
@@ -8227,6 +8331,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1449571993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449571990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a80fb4a61381cd4f8c792be80a02a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myDoor: {fileID: 1989289620}
 --- !u!1 &1458089955 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3209805490303159714, guid: 95944ae49834cec4190e7369f475a685, type: 3}
@@ -14468,9 +14585,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOpen: 0
-  Door3Dmodel: {fileID: 0}
-  startingPoint: {fileID: 0}
-  endingPoint: {fileID: 0}
+  Door3Dmodel: {fileID: 987519711}
+  startingPoint: {fileID: 1356576872}
+  endingPoint: {fileID: 499729201}
 --- !u!4 &1989289621
 Transform:
   m_ObjectHideFlags: 0
