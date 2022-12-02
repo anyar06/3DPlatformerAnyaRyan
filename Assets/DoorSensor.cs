@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class DoorSensor : MonoBehaviour
 {
-    public MovingDoor myDoor;
+    public MovingDoor Door3Dmodel;
 
-    private void OnTriggorEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
-        {
-            myDoor.isOpen = true;
-        }
+      // if(other.tag == "Player")
+       // {
+            Door3Dmodel.isOpen = true;
+            Debug.Log("Touched door");
+      //  }
     }
 }
